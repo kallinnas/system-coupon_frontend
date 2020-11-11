@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+::selection {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+html {
+    background: #9FA7B2 url(https://dl.dropbox.com/u/40671103/bgColor1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+div {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+div h1.light {
+    display: inline-block;
+    color: #fefefe;
+    text-shadow: 0px 1px 0px #c0c0c0, 0px 2px 0px #b0b0b0, 0px 3px 0px #a0a0a0, 0px 4px 0px #909090, 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+div h1.dark {
+    display: inline-block;
+    color: #101010;
+    text-shadow: 0px 1px 0px #555555, 0px 2px 0px #454545, 0px 3px 0px #353535, 0px 4px 0px #252525, 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+div:active h1.light {
+    color: #fefefe;
+    text-shadow: 0px 0px 0px #c0c0c0, 0px 0px 0px #b0b0b0, 0px 0px 0px #a0a0a0, 0px 0px 0px #909090, 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+div:active h1.dark {
+    color: #101010;
+    text-shadow: 0px 0px 0px #555555, 0px 0px 0px #454545, 0px 0px 0px #353535, 0px 0px 0px #252525, 0px 1px 3px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,18 @@
+<form action="" class="menu-box">
+    <h2 class="titular">Update {{coupon.title}}</h2>
+
+    <input class="form" type="text" placeholder="title" [formControl]="titleFC" name="title">
+    <input class="form" type="text" placeholder="startDate" [formControl]="startDateFC" name="startDate">
+    <input class="form" type="text" placeholder="endDate" [formControl]="endDateFC" name="endDate">
+    <input class="form" type="number" placeholder="category" [formControl]="categoryFC" name="category">
+    <input class="form" type="number" placeholder="amount" [formControl]="amountFC" name="amount">
+    <input class="form" type="text" placeholder="description" [formControl]="descriptionFC" name="description">
+    <input class="form" type="number" placeholder="price" [formControl]="priceFC" name="price">
+    <input class="form" type="text" placeholder="imageURL" [formControl]="imageURLFC" name="imageURL">
+
+    <button class="up" (click)="updateCoupon()">
+        Update</button>
+
+</form>
+<a class="button" routerLink="/admin-c">
+    Back to All Coupons</a>

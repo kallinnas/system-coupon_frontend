@@ -1,0 +1,15 @@
+<div *ngIf="modeSer.clientType == '0'">
+    <app-menu></app-menu>
+</div>
+
+<div *ngIf="modeSer.clientType == '1'">
+    <app-customer-menu></app-customer-menu>
+</div>
+
+<div *ngIf="modeSer.clientType == '2'">
+    <app-company-menu></app-company-menu>
+</div>
+
+<div *ngIf="modeSer.clientType == '3'">
+    <app-admin-menu></app-admin-menu>
+</div>

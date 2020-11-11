@@ -1,0 +1,56 @@
+section {
+    height: 100%;
+    border: 1px solid black;
+    background-color: lightblue;
+    box-sizing: border-box;
+    /* text-align: center; */
+    display: grid;
+    grid-template-rows: 13% 12% 70% 5%;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+    grid-column: span 12;
+    /* border: 1px solid black;
+    border-radius: 7%; */
+}
+
+nav {
+    grid-column: span 12;
+    z-index: 1;
+    margin: 0;
+}
+
+aside {
+    grid-column: span 3;
+    /* border: 1px solid black;
+    border-radius: 7%; */
+    margin: 0;
+}
+
+main {
+    grid-column: span 9;
+    /* border: 1px solid black;
+    border-radius: 7%; */
+    margin: 0;
+}
+
+footer {
+    grid-column: span 12;
+    /* border: 1px solid black;
+    border-radius: 7%; */
+}
+
+
+/* div.conteiner {
+    margin-right: auto;
+    margin-left: auto;
+    width: 8em
+} */
+
+
+/* button {
+    position: absolute;
+    font-size: x-large;
+    top: 85%;
+} */

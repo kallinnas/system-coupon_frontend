@@ -1,0 +1,32 @@
+div {
+    margin: 0;
+    padding: 0;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+span {
+    color: black;
+}
+
+#footer-site {
+    padding-bottom: px;
+    padding-top: 1px;
+    background-color: rgb(198, 115, 121);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgb(222, 241, 245);
+}
+
+#footer-site a {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(222, 241, 245);
+    text-align: center;
+    text-decoration: overline;
+}
+
+.widget-social li {
+    display: inline-block;
+    margin-right: 11px;
+}

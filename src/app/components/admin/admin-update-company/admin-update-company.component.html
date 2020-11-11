@@ -1,0 +1,11 @@
+<form action="" class="menu-box ">
+
+    <input class="form" type="text" placeholder="name" [formControl]="nameFC" name="name">
+
+
+    <input class="form" type="text" placeholder="imageURL" [formControl]="imageURLFC" name="imageURL">
+
+    <button class="up" (click)="updateCompany()">Update</button>
+
+</form>
+<a class="button" routerLink="/companies">Back to All Companies</a>

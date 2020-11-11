@@ -1,0 +1,22 @@
+html,
+body {
+    /* position: relative; - Page stretch out in the center, the scroll expand the page if element is too big*/
+    /* position: relative;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 auto; */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* input,
+button {
+    border-radius: 4px;
+} */
+
+
+/* body {
+    background-color: red;
+} */

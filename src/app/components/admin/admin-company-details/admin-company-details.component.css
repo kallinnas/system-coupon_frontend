@@ -1,0 +1,143 @@
+h3 {
+    margin: 10px auto;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    font-family: inherit;
+    color: rgb(66, 57, 53);
+    font-weight: 550;
+}
+
+.wot {
+    position: absolute;
+    left: 3%;
+    top: 23%;
+}
+
+.compID {
+    position: absolute;
+    left: 3%;
+    top: 68%;
+}
+
+.comI {
+    position: absolute;
+    left: 17%;
+    top: 70%;
+    border-radius: 100%;
+}
+
+.up {
+    position: absolute;
+    left: 3%;
+    top: 75%;
+}
+
+.compN {
+    position: absolute;
+    left: 3%;
+    top: 70%;
+}
+
+.img {
+    position: absolute;
+    left: 2%;
+    top: 30%;
+}
+
+.cus {
+    height: 88%;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#627379, #7E878A, #ADD8E6, #7E878A, #627379);
+    border-radius: 5px;
+}
+
+table {
+    width: 300px;
+    margin: 0px auto;
+    padding: 10px;
+    font-family: inherit;
+    text-align: center;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+}
+
+.main {
+    background: rgb(236, 75, 75);
+    font-weight: 550;
+}
+
+th {
+    padding: 5px 8px;
+    color: lightblue;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.str {
+    border-bottom: 1px solid rgb(39, 120, 136);
+    border-top: 1px solid rgb(39, 120, 136);
+    transition: .5s;
+}
+
+td,
+a {
+    padding: 5px 7px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #495458;
+    text-decoration: none;
+}
+
+.str:hover {
+    background-color: #f08c88;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #6fbbd3;
+}
+
+tr:nth-child(odd) {
+    background-color: #f08c88;
+}
+
+.button {
+    background-color: rgb(222, 241, 245);
+    border: none;
+    color: rgb(21, 64, 73);
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 10px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    font-family: inherit;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 1
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+.delC {
+    position: absolute;
+    left: 3%;
+    top: 90%;
+}

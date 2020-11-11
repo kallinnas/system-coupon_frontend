@@ -1,0 +1,22 @@
+<div class="root">
+
+    <img src="/assets/images/customer.jpg" style=" width: 200px;">
+
+    <form>
+        <input type="number" placeholder="Find by id..." [(ngModel)]="id" name="id">
+        <button (click)="getCouponById()">
+            <i class="fa fa-search"></i></button>
+    </form>
+
+    <form>
+        <input type="number" placeholder="Find by above price..." [(ngModel)]="price" name="price">
+        <button (click)="getCouponsByBelowPrice()">
+            <i class="fa fa-search"></i></button>
+    </form>
+
+    <form>
+        <input type="text" placeholder="Find by title..." [(ngModel)]="title" name="title">
+        <button (click)="getCouponsByTitle()">
+            <i class="fa fa-search"></i></button>
+    </form>
+</div>

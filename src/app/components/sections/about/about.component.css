@@ -1,0 +1,64 @@
+.one {
+    margin: 5px auto;
+}
+
+img {
+    position: absolute;
+    right: 58%;
+    margin: 0;
+    border: 2px solid lavender;
+}
+
+h3 {
+    font-family: inherit;
+    color: #555;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.box {
+    justify-content: center;
+    position: absolute;
+    top: 65%;
+    right: 59%;
+    font-family: inherit;
+    color: rgb(28, 80, 250);
+}
+
+button {
+    background: none;
+    margin: 3px;
+    padding: 3px 7px;
+    border: none;
+    color: white;
+}
+
+.pos {
+    position: absolute;
+    left: 10%;
+}
+
+div:nth-of-type(2) {
+    position: absolute;
+    top: 27%;
+    right: 9%;
+    padding: 40px;
+    width: 300px;
+}
+
+h5 {
+    color: #555;
+    font-family: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+p {
+    color: rgb(136, 133, 133);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+}

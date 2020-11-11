@@ -1,0 +1,32 @@
+<div *ngIf="coupons" class="cus">
+
+    <table>
+        <tr class="main">
+            <th>ID</th>
+            <th>Title</th>
+            <th>StartDate</th>
+            <th>EndDate</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Image</th>
+        </tr>
+
+        <tr *ngFor="let c of coupons" class="str">
+            <td><a routerLink="/coupon-details/{{c.id}}">
+                    {{c.id}}</a></td>
+            <td>{{c.title}}</td>
+            <td>{{c.startDate}}</td>
+            <td>{{c.endDate}}</td>
+            <td> <a routerLink="/coupon-cat/{{c.category}}">{{c.category}}</a></td>
+            <td>{{c.amount}}</td>
+            <td>{{c.price}}</td>
+            <td>{{c.description}}</td>
+            <td>
+                <img src="{{c.imageURL}}" width=80px; height="80px">
+            </td>
+        </tr>
+    </table>
+
+</div>

@@ -1,0 +1,50 @@
+<h3 class="wot">What's up, Admin?</h3>
+
+<img class="img" src="/assets/images/admin.png" style=" width: 400px;">
+
+<h3 class="compID">ID:{{customer.id}}</h3>
+<h3 class="compN">{{customer.firstName}} {{customer.lastName}}</h3>
+
+<a class="up" routerLink="/ad-update-customer">Update customer {{customer.firstName}}</a>
+
+
+
+<button class="delC" (click)="deleteCustomerById()">
+    Delete customer {{customer.firstName}}</button>
+
+
+<div class="cus">
+
+    <table *ngIf="coupons">
+        <tr class="main">
+            <th>ID</th>
+            <th>Title</th>
+            <th>StartDate</th>
+            <th>EndDate</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Delete</th>
+        </tr>
+
+        <tr *ngFor="let c of coupons" class="str">
+            <td><a routerLink="/coupon-details/{{c.id}}">{{c.id}}</a></td>
+            <td>{{c.title}}</td>
+            <td>{{c.startDate}}</td>
+            <td>{{c.endDate}}</td>
+            <td><a routerLink="/coupon-cat/{{c.category}}">{{c.category}}</a></td>
+            <td>{{c.amount}}</td>
+            <td>{{c.price}}</td>
+            <td>{{c.description}}</td>
+            <td>
+                <img src="{{c.imageURL}}" width=80px; height="80px">
+
+            </td>
+            <td><button (click)=deleteCustomersCoupon(c.id)><i class="fa fa-times" style="font-size:30px;
+                color:lightblue;"></i></button></td>
+        </tr>
+    </table>
+
+</div>

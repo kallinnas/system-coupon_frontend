@@ -1,0 +1,19 @@
+<div>
+    <img src="{{coupon?.imageURL}}" style=" width: 200px; height: 250px;">
+
+    <h3>Id: {{coupon?.id}}</h3>
+    <h2>Title: {{coupon?.title}}</h2>
+    <h3>Description: {{coupon?.description}}</h3>
+    <h3>Category: {{coupon?.category}}</h3>
+    <h3>Amount: {{coupon?.amount}}</h3>
+    <h3>Price: {{coupon?.price}}</h3>
+    <h3>Start: {{coupon?.startDate}}</h3>
+    <h3>End: {{coupon?.endDate}}</h3>
+</div>
+
+
+
+<br><br>
+
+<button *ngIf="role == '1'" class="buy" (click)="buyCoupon()">
+    Buy KUPON!</button>

@@ -1,0 +1,75 @@
+<h3>New coupon</h3>
+
+<!-- #formInfo="ngForm" {{formInfo.form.valid}} - sets selector id for <form> that shows true/false if all fields are filled up correctly or empty-->
+<form #formInfo="ngForm" class="menu-box">
+    <!-- pristine/dirty - sends "true" when the field hasn't been changed/sends "true" when the field has been changed by user-->
+
+    <!-- #idInfo = "ngModel" & {{idInfo.valid}} true/false near button "Create coupon" if the line is full/empty  -->
+
+    <!-- <input #idInfo="ngModel" required type="number" placeholder="Id..." [(ngModel)]="coupon.id" name="id">
+    <span *ngIf="idInfo.errors?.required && idInfo.touched">Missing ID</span>
+    <br> -->
+
+
+    <!-- Валідацію проходить той об'єкт, що має вірно заповнений рядок (true) -->
+    <!-- "^[A-Z].*$" : (.) - any symbol (*) - 0 or more times  -->
+    <input #titleInfo="ngModel" required pattern="^[A-Z].*$" type="text" placeholder="Title..." [(ngModel)]="coupon.title" name="title">
+    <br>
+    <span *ngIf="titleInfo.errors?.required && titleInfo.touched">Missing Title</span>
+    <span *ngIf="titleInfo.errors?.pattern && titleInfo.touched">Title starts with a Cap-letter!</span>
+    <br>
+
+    <input #startDateInfo="ngModel" required type="text" placeholder="Start Date..." [(ngModel)]="coupon.startDate" name="startDate">
+    <br>
+    <span *ngIf="!startDateInfo.valid && startDateInfo.touched">Missing Date</span>
+    <br>
+
+    <input #endDateInfo="ngModel" required type="text" placeholder="End Date..." [(ngModel)]="coupon.endDate" name="endDate">
+    <br>
+    <span *ngIf="!endDateInfo.valid && endDateInfo.touched">Missing Date</span>
+    <br>
+
+    <input #categoryInfo="ngModel" required type="number" placeholder="Category..." [(ngModel)]="coupon.category" name="category">
+    <br>
+    <span *ngIf="!categoryInfo.valid && categoryInfo.touched">Missing Category</span>
+    <br>
+
+    <input #amountInfo="ngModel" required minlength="2" type="number" placeholder="Amount..." [(ngModel)]="coupon.amount" name="amount">
+    <br>
+    <span *ngIf="!amountInfo.valid && amountInfo.touched">Missing Amount</span>
+    <br>
+
+    <input #priceInfo="ngModel" required pattern="^[-]?[0-9]*[.]?[0-9]*$" min="0" max="1000" placeholder="Price..." [(ngModel)]="coupon.price" name="price">
+    <br>
+    <span *ngIf="priceInfo.errors?.required && priceInfo.touched">Missing Price</span>
+    <span *ngIf="priceInfo.errors?.pattern && priceInfo.touched">Price must be a number</span>
+    <br>
+
+
+
+    <input #descriptionInfo="ngModel" required type="text" placeholder="Description..." [(ngModel)]="coupon.description" name="description">
+    <br>
+    <span *ngIf="!descriptionInfo.valid && descriptionInfo.touched">Missing Description</span>
+    <br>
+
+    <input #imageURLInfo="ngModel" required type="text" placeholder="ImageURL..." [(ngModel)]="coupon.imageURL" name="imageURL">
+    <br>
+    <span *ngIf="!imageURLInfo.valid && imageURLInfo.touched">Missing ImageURL</span>
+    <br><br>
+
+    <!-- [disabled]= "!formInfo.form.valid" - makes button invalid if fom isn't "true" -->
+    <button class="up" [disabled]="!formInfo.form.valid" (click)="addCoupon()" routerLink="/company-account">Create</button>
+
+    <!-- Display status of object(true/false) -->
+    <!-- <p>Id Valid? {{idInfo.valid}}</p>
+    <p>Title Valid? {{titleInfo.valid}}</p>
+    <p>startDate Valid? {{startDateInfo.valid}}</p>
+    <p>EndDate Valid? {{endDateInfo.valid}}</p>
+    <p>Category Valid? {{categoryInfo.valid}}</p>
+    <p>Amount Valid? {{amountInfo.valid}}</p>
+    <p>Price Valid? {{priceDateInfo.valid}}</p>
+    <p>Description Valid? {{descriptionInfo.valid}}</p>
+    <p>ImageURL Valid? {{imageURLInfo.valid}}</p>
+    <p>Form Valid? {{formInfo.form.valid}}</p> -->
+</form>
+<a class="button" routerLink="/company-account">Back to All Company Coupons</a>

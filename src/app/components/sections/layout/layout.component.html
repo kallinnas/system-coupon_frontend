@@ -1,0 +1,34 @@
+<section>
+
+    <header>
+        <app-header></app-header>
+    </header>
+
+    <nav>
+        <div class="root">
+            <app-menu *ngIf="mode._clientType == '0'"></app-menu>
+            <app-customer-menu *ngIf="mode._clientType == '1'"></app-customer-menu>
+            <app-company-menu *ngIf="mode._clientType == '2'"></app-company-menu>
+            <app-admin-menu *ngIf="mode._clientType == '3'"></app-admin-menu>
+        </div>
+    </nav>
+
+    <aside>
+        <div class="root" class="conteiner">
+            <app-login *ngIf="mode._clientType == '0'"></app-login>
+        </div>
+        <div class="root">
+            <app-filter-k *ngIf="mode._clientType == '1'"></app-filter-k>
+        </div>
+
+    </aside>
+
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+
+    <footer>
+        <app-footer></app-footer>
+    </footer>
+
+</section>

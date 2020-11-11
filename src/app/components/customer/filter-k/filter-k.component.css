@@ -1,0 +1,30 @@
+div {
+    margin-top: -30px;
+    margin-left: 15px;
+}
+
+.root {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    color: #454547;
+    text-decoration: none;
+    font-family: inherit;
+}
+
+.root input {
+    margin: 3px;
+    font-size: 18px;
+    background: rgba(86, 191, 218, 0.507);
+    color: #454547;
+    font-family: inherit;
+    display: block;
+    border: 2px solid lightblue;
+    padding: 14px 10px;
+    /*цвет текста внутри*/
+    outline: none;
+}
+
+button {
+    display: none;
+}

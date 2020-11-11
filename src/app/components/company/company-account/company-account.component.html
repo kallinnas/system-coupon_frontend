@@ -1,0 +1,51 @@
+<h2> Coupons of company: {{company.name}} !</h2>
+
+<a>
+    <a class="up" routerLink="/update-company">Update company</a>
+
+    <img class="acc" src="{{company.imageURL}}" style="width: 250px; height: 250px;">
+</a>
+
+
+<div class="cus">
+
+    <table *ngIf="coupons">
+        <tr class="main">
+            <th>ID</th>
+            <th>Title</th>
+            <th>StartDate</th>
+            <th>EndDate</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+
+        <tr *ngFor="let c of coupons" class="str">
+            <td><a routerLink="/coupon-details/{{c.id}}">{{c.id}}</a></td>
+            <td>{{c.title}}</td>
+            <td>{{c.startDate}}</td>
+            <td>{{c.endDate}}</td>
+            <td><a routerLink="/coupon-cat/{{c.category}}">{{c.category}}</a></td>
+            <td>{{c.amount}}</td>
+            <td>{{c.price}}</td>
+            <td>{{c.description}}</td>
+            <td>
+                <img src="{{c.imageURL}}" width=80px; height="80px">
+
+            </td>
+            <td><button (click)=delCoupon(c.id) href="/company-account"><i  class="fa fa-times" 
+                style="font-size:30px;
+                color:lightblue;"></i></button></td>
+            <td>
+                <a routerLink="/update-coupon" (click)="saveCouponID(c.id)">
+                    <i class="fa fa-pencil" style="font-size:30px;
+                    color:lightblue;"></i></a>
+            </td>
+        </tr>
+    </table>
+
+</div>

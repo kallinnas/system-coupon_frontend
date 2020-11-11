@@ -1,0 +1,101 @@
+.flex-cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dws-wrapper {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    height: 80%;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#627379, #7E878A, #ADD8E6, #7E878A, #627379);
+    border-radius: 5px;
+}
+
+.imageBox {
+    overflow: hidden;
+    position: relative;
+    margin: 15px;
+    height: 300px;
+}
+
+
+/*размер картинки thumb css img*/
+
+.content {
+    font-family: inherit;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    height: 180px;
+    width: 180px;
+    background-color: rgba(86, 191, 218, 0.507);
+    margin: 0;
+    padding: 0;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s;
+    -webkit-transform: translateY(-40%);
+    -moz-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    -o-transform: translateY(-40%);
+    transform: translateY(-40%);
+    transition: 0.5s;
+}
+
+.imageBox:hover .content {
+    transform: translateY(-110%);
+    transition-delay: 1s;
+}
+
+.h2,
+.h3,
+.p {
+    font-family: inherit;
+    margin: 3px;
+    padding: 3px;
+    text-transform: uppercase;
+    color: #31383a;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: inherit;
+    margin: 3px;
+    padding: 3px;
+    color: #31383a;
+    font-size: 15px;
+}
+
+.button {
+    background-color: rgb(222, 241, 245);
+    border: none;
+    color: rgb(21, 64, 73);
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 10px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 1
+}

@@ -1,0 +1,106 @@
+.flex-cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dws-wrapper {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    height: 70%;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#627379, #7E878A, #ADD8E6, #7E878A, #627379);
+    border-radius: 5px;
+}
+
+.imageBox {
+    padding: 10px;
+    overflow: hidden;
+    height: 170px;
+    width: 140px;
+    position: relative;
+    margin: 15px;
+}
+
+
+/*размер картинки thumb css img*/
+
+.imageBox a {
+    border-radius: 100%;
+    text-align: center;
+    min-width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    color: #495458;
+    background-color: rgba(86, 191, 218, 0.507);
+    padding: 5px 5px;
+    margin: 0;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-left: 3px solid rgb(59, 61, 60);
+    border-right: 3px solid rgb(59, 61, 60);
+    text-decoration: none;
+    font-family: inherit;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s;
+    -webkit-transform: translateX(-20%);
+    -moz-transform: translateX(-20%);
+    -ms-transform: translateX(-20%);
+    -o-transform: translateX(-20%);
+    transform: translateX(-20%);
+}
+
+.imageBox:hover a {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.del {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.up {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 22.5%;
+}
+
+.img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    filter: grayscale(.2);
+}
+
+.img:hover {
+    -webkit-transform: scale(1.2) rotate(-10deg);
+    -moz-transform: scale(1.2) rotate(-10deg);
+    -ms-transform: scale(1.2) rotate(-10deg);
+    -o-transform: scale(1.2) rotate(-10deg);
+    transform: scale(1.2) rotate(-10deg);
+    filter: grayscale(0);
+}

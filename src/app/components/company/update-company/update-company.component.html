@@ -1,0 +1,13 @@
+<form action="" class="menu-box ">
+
+    <!-- <input type="text" placeholder="id" [formControl]="idFormControl" name="id"> -->
+
+    <input class="form" type="text" placeholder="name" [formControl]="nameFormControl" name="name">
+
+
+    <input class="form" type="text" placeholder="imageURL" maxlength="1000" [formControl]="imageURLFormControl" name="imageURL">
+
+    <button class="up" (click)="updateCompany()">Update</button>
+
+</form>
+<a class="button" routerLink="/company-account">Back to All Company Coupons</a>
